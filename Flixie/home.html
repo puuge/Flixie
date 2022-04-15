@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="viewport" content="width=device-width, initial-scale=1.8">
+    <title>Flixie</title>
+    <link rel="icon" href="./img/flixie.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <!-- header section -->
+    
+    <!--navbar-->
+    <header class="shadow">
+        
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        
+
+        <!--Menu-->
+        <ul class="navbar active">
+
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+    <!-- home section -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./img/spiderman.jpg" />
+                <div class="home-text">
+                    <h1>The Amazing <br /> Spider Man</h1>
+                    <a href="#" class="btn">Watch It Free</a>
+                    <a href="#" class="play">
+                        <i class=" fas fa-play"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="./img/batman.jpg" />
+                <div class="home-text">
+                    <h1>The Batman</h1>
+                    <a href="#" class="btn">Watch It Free</a>
+                    <a href="#" class="play">
+                        <i class=" fas fa-play"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="./img/ambulance.jpg" />
+                <div class="home-text">
+                    <h1>Ambulance</h1>
+                    <a href="#" class="btn">Watch It Free</a>
+                    <a href="#" class="play">
+                        <i class=" fas fa-play"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </section>
+
+    <!-- Movie section -->
+    <section class="movies" id="movies">
+        <h2 class="heading">Movie This Year</h2>
+        <!--movies container-->
+        <div class="movies-container">
+            <!-- movie 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/spiderman.jpg" />
+                </div>
+                <h3>The Amazing<br />Spiderman</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/batman.jpg" />
+                </div>
+                <h3>The Batman</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/ambulance.jpg" />
+                </div>
+                <h3>Ambulance</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 4 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/aquaman.jpg" />
+                </div>
+                <h3>Aquaman</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 5 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/doctorstrange.jpg" />
+                </div>
+                <h3>Doctor Strange: Multi-verse Madness</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 6 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/abominable.jpg" />
+                </div>
+                <h3>Abominable</h3>
+                <span>120 min | Fantasy</span>
+            </div>
+            <!-- movie 7 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/johnwick.jpg" />
+                </div>
+                <h3>John Wick</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 8 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/endgame.jpg" />
+                </div>
+                <h3>Avengers: Endgame</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 9 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/bumblebee.jpg" />
+                </div>
+                <h3>Bumblebee</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- movie 00 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/worldwar.jpg" />
+                </div>
+                <h3>World War Z</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Coming Soon -->
+
+    <section class="coming" id="coming">
+        <h2 class="heading"> Coming Soon</h2>
+        <!--coming container-->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <!-- movie 1 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/blackadam.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+                <!-- movie 2 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/codename.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+                <!-- movie 3 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/fantastic.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Sci-fi</span>
+                </div>
+                <!-- movie 4 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/iceage.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Adventure</span>
+                </div>
+                <!-- movie 5 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/morbius.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+                <!-- movie 6 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/rumble.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+                <!-- movie 7 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/sonic.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+                <!-- movie 8 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/thelostcity.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+                <!-- movie 9 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/thor.png" />
+                    </div>
+                    <h3>Coming soon</h3>
+                    <span>???min | Action</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Letter Section -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe To Get<br />Newsletter</h2>
+        <form action="">
+            <input type="email" placeholder="Enter Email.." required />
+            <input type="submit" value="Subscribe" class="btn" />
+        </form>
+    </section>
+
+    <!--Footer section -->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-film"></i>Flixie
+        </a>
+        <div class="social">
+            <a href="https://www.facebook.com" class="logo"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" class="logo"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" class="logo"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" class="logo"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; GraphiCodeMedia All Rights Reserved.</p>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>

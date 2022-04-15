@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+/*variable colors*/
+:root {
+    --main-color: #3e2e8c;
+    --text-color: #e2d5d5;
+    --bg-color: #000000;
+}
+
+body {
+    background: var(--text-color);
+    color: var(--bg-color)
+}
+
+/* header section */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+    background: var(--main-color);
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 5rem;
+}
+
+    .navbar li {
+        position: relative;
+    }
+
+    .navbar a {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+        
+    
+    
+.navbar a:after {           
+    content: '';            
+    width: 0;             
+    height: 3px;            
+    background: var(--bg-color);           
+    position: absolute;            
+    bottom: -4px;            
+    left: 0;           
+    transition: 0.4s all linear;     
+}
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+.content {
+    position: relative;
+}
+
+.btn {
+    padding: 0.7rem 1.4rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+
+   
+.btn:hover {
+        background: #808080;
+}
+
+.navbar .search {
+    left: 18px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    padding: 0 42px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.search :where(i, span){
+    position: absolute;
+    top: 50%;
+    color: #3e2e8c;
+    transform: translateY(-50%);
+}
+.search i{
+    left: 9px;
+    font-size: 16px;
+    pointer-events: none;
+}
+.search input:focus ~ i{
+    color: #000;
+}
+.search span{
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.search input:valid ~ span{
+    display: block;
+}

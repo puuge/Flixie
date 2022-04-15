@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Flixie</title>
+    <link rel="icon" href="./img/flixie.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="#home"><img src="./img/flixie.png" class="logo-img"></a>
+        <a href="#" class="logo"><i class="fa-solid fa-film"></i></a>
+
+
+
+        <div class="box bx-menu" id="menu-icon">
+            <ul class="navbar">
+                <li class="search">
+                    <input type="text" placeholder="search" required />
+                    <i class="fas fa-search"></i>
+                    <span class="fas fa-close"></span>
+                </li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="about.html">Coming</a></li>
+                <li><a href="contact.html" class="home-active">News Letter</a></li>
+                <li><a href="#" class="btn">Sign In</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./img/spiderman.jpg" />
+                <div class="home-text">
+                    <h1>The Amazing <br /> Spider Man</h1>
+                    <a href="#" class="btn">Watch It Free</a>
+                    <a href="#" class="play">
+                        <i class=" fas fa-play"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="./img/batman.jpg" />
+                <div class="home-text">
+                    <h1>The Batman</h1>
+                    <a href="#" class="btn">Watch It Free</a>
+                    <a href="#" class="play">
+                        <i class=" fas fa-play"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="./img/ambulance.jpg" />
+                <div class="home-text">
+                    <h1>Ambulance</h1>
+                    <a href="#" class="btn">Watch It Free</a>
+                    <a href="#" class="play">
+                        <i class=" fas fa-play"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </section>
+
+    <!-- Movie section -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>
